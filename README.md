@@ -1,4 +1,4 @@
-Power BI Analysis
+## Power BI Analysis on Video Game Sales
  
 
 I have selected the dataset to evaluate video game sales worldwide, mainly focusing on North America, Europe, and Japan. 
@@ -10,7 +10,7 @@ I have selected the dataset to evaluate video game sales worldwide, mainly focus
 5.	How has the gaming industry’s total sales grown over decades?
 6.	Do games released on multiple platforms perform better in global sales?
 
-The initial transformations applied to the dataset are as follows:
+## The initial transformations applied to the dataset are as follows:
 1)	Removed errors from the column years and publisher
 2)	Created a new column named Regional Sales to find out the percentage of sales in North America to the global sales
 3)	Applied a conditional column to check whether the game is popular
@@ -18,7 +18,7 @@ The initial transformations applied to the dataset are as follows:
 Text.From(Number.RoundDown([Year] / 10) * 10) & "s".
 ![image](https://github.com/user-attachments/assets/3d93666e-88c6-44cc-ad83-9cb7fe514421)
 
-STAR SCHEMA
+## STAR SCHEMA
 For the further purpose of evaluation, we decided to create a star schema. We split the entire dataset into different tables.
 Fact Table: Contains quantitative data (e.g., sales figures, ranks) and foreign keys linking to dimension tables.
 Dimension Tables: Contain descriptive data (e.g., platform details, game genres) that provide context for the facts.
